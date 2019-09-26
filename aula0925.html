@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <script  type="text/javascript"  src="aula0925.js">
+        </script>
+        <script defer src="aula0925.js" async charset="utf-8"></script>
+        <meta charset=”UTF-8” />
+        <link rel=”favicon” href=”/favicon.ico” />
+        <title>Seasons</title>
+        <link href="Aula0925.css" rel="stylesheet">
+    </head>
+    <body>
+        <p><strong><h1 class="titulo4">Estações do ano</h1></strong></p>
+        <h2 class="titulo3">Que tal passar pelas 4 estações do ano em apenas 1 dia?</h2>
+
+        
+        <div id="myNav" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <div class="overlay-content">
+                  <a href="#">Winter</a>
+                  <a href="#">Spring</a>
+                  <a href="#">Summer</a>
+                  <a href="#">Autumn</a>
+                </div>
+            </div>
+            <span onclick="openNav()">Seasons</span>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Winter</a>
+                    <a href="#">Spring</a>
+                    <a href="#">Summer</a>
+                    <a href="#">Autumn</a>
+                </div>
+            </div>
+        <br>
+        </div>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+                  </script>
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://s2.glbimg.com/qBvYTB2Wx4bXKtOtNrnCp8XDmLw=/0x0:1700x1065/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/h/e/9Zdvn2SQCpdi9nB1we8w/primavera01.jpg" style="width:100%">
+            <div class="text">Primavera</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://www.jornalspnorte.com.br/enviados/2017/12/261217_sao-paulo.jpg" style="width:100%">
+            <div class="text">Verão</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="http://revistaaquiali.com.br/uploads/noticias/25607/25607_afaf23c5abd135a2d12e1b46cb380469-1489744426.jpg" style="width:100%">
+            <div class="text">Outono</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://portaldeinverno.com.br/wp-content/uploads/2015/06/S%C3%A3o-Paulo.jpg" style="width:100%">
+            <div class="text">Inverno</div>
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>      
+    </body>
+</html>
